@@ -1,4 +1,4 @@
-import { calcularRendimiento } from "../services/serviceIndex.js";
+import { calcularRendimiento } from "../services/ejercicio05service.js";
 
 const formulario = document.querySelector("#formulario");
 const totalPreguntas = document.querySelector("#totalPreguntas");
