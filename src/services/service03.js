@@ -206,5 +206,98 @@ export const compararCiudadPais = () => {
     }
 
 
+
+    // ==========================================
+    // MOSTRAR LOS RESULTADOS EN UNA VENTANA
+    // ==========================================
+
+
+    // Creamos una variable llamada "mensaje".
+
+    // let:
+    // Permite crear una variable cuyo contenido
+    // puede cambiar.
+
+    // Comenzamos guardando en ella
+    // el resultado de la concatenación.
+    let mensaje = "Ciudad y país: " + resultado;
+
+
+    // Agregamos un salto de línea al mensaje.
+
+    // \n:
+    // Representa un salto de línea dentro de un string.
+
+    // +=:
+    // Significa que agregamos información
+    // al contenido que ya tenía la variable.
+    mensaje += "\n";
+
+
+    // Agregamos la cantidad de caracteres
+    // que tiene la ciudad.
+    mensaje += "Cantidad de caracteres de la ciudad: " + cantidadCiudad;
+
+
+    // Agregamos otro salto de línea.
+    mensaje += "\n";
+
+
+    // Agregamos la cantidad de caracteres
+    // que tiene el país.
+    mensaje += "Cantidad de caracteres del país: " + cantidadPais;
+
+
+    // Agregamos otro salto de línea.
+    mensaje += "\n";
+
+
+    // Agregamos otro salto de línea
+    // para separar la información.
+    mensaje += "\n";
+
+
+    // Volvemos a comparar las cantidades
+    // para agregar el mensaje correspondiente
+    // a la ventana emergente.
+    if (cantidadCiudad > cantidadPais) {
+
+
+        // Si la ciudad tiene más caracteres,
+        // agregamos este texto al mensaje.
+        mensaje += "La ciudad tiene más caracteres que el país.";
+
+
+    } else if (cantidadPais > cantidadCiudad) {
+
+
+        // Si el país tiene más caracteres,
+        // agregamos este texto al mensaje.
+        mensaje += "El país tiene más caracteres que la ciudad.";
+
+
+    } else {
+
+
+        // Si ambas cantidades son iguales,
+        // agregamos este texto al mensaje.
+        mensaje += "La ciudad y el país tienen la misma cantidad de caracteres.";
+
+
+    }
+
+
+    // alert():
+    // Abre una ventana emergente en el navegador.
+
+    // mensaje:
+    // Es el texto que queremos mostrar.
+
+    // todos los resultados
+    // aparecerán en una ventana además
+    // de mostrarse en la consola.
+    alert(mensaje);
+
+
 // Cerramos la función principal.
 };
